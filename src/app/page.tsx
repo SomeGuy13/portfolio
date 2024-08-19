@@ -1,112 +1,61 @@
-import Image from "next/image";
+import { VerticalBarScale } from "@/components/verticalBarScale";
+import Link from "next/link";
 
-export default function Home() {
+export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
+    <main>
+      <div className='lg:w-3/6 md:w-5/6 p-2 m-auto'>
+        <h1 className="flex justify-center text-6xl md:mt-36 mt-8 mb-3 text-pretty text-center">Mechanized Viking</h1>
+        <p className='flex justify-center text-pretty text-center mb-5 md:mb-24'>Game and web developer. Passionate about programming.</p>
+        <h1>About</h1>
+        <p>
+          I'm a self taught hobbiest who learns cool stuff from doing a lot of Googling, reading, and just straight up trail and error.
+          Check out my projects below!
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <Link href={"/projects"}>
+          <div className='button w-fit p-1.5 mt-3'>
+            <p>See all projects</p>
+          </div>
+        </Link>
+        <h1 className="mt-3">Skills</h1>
+        <p>Just my personal guesses</p>
+        <div className="lg:flex lg:justify-between">
+          <div>
+            <h2>Game Development</h2>
+            <h4>Design</h4>
+            <VerticalBarScale skillName="Mechanics" value={4.5}></VerticalBarScale>
+            <VerticalBarScale skillName="Level Design" value={3.7}></VerticalBarScale>
+            <VerticalBarScale skillName="UI Design" value={2}></VerticalBarScale>
+            <h4>Art</h4>
+            <VerticalBarScale skillName="3D Modeling" value={4}></VerticalBarScale>
+            <VerticalBarScale skillName="3D Animation" value={0.75}></VerticalBarScale>
+            <VerticalBarScale skillName="Pixel Art" value={3}></VerticalBarScale>
+            <VerticalBarScale skillName="Voxel Art" value={9}></VerticalBarScale>
+            <h4>Programming</h4>
+            <VerticalBarScale skillName="C#" value={6.89}></VerticalBarScale>
+            <VerticalBarScale skillName="C" value={0.1}></VerticalBarScale>
+            <VerticalBarScale skillName="Rust" value={4.84}></VerticalBarScale>
+            <VerticalBarScale skillName="Blueprint" value={1.13}></VerticalBarScale>
+            <VerticalBarScale skillName="Lua" value={0.74}></VerticalBarScale>
+            <h4>Engines</h4>
+            <VerticalBarScale skillName="Unity" value={8.25}></VerticalBarScale>
+            <VerticalBarScale skillName="Unreal" value={1}></VerticalBarScale>
+            <h4></h4>
+          </div>
+          <div>
+            <h2>Web Development</h2>
+            <h4>Frameworks</h4>
+            <VerticalBarScale skillName="React" value={6.5}></VerticalBarScale>
+            <VerticalBarScale skillName="NextJS" value={4.2}></VerticalBarScale>
+            <VerticalBarScale skillName="Tailwind" value={5}></VerticalBarScale>
+            <h4>Database</h4>
+            <VerticalBarScale skillName="PostgrSQL" value={3}></VerticalBarScale>
+            <h4>Languages</h4>
+            <VerticalBarScale skillName="HTML" value={9}></VerticalBarScale>
+            <VerticalBarScale skillName="CSS" value={6.32}></VerticalBarScale>
+            <VerticalBarScale skillName="Java Script" value={8}></VerticalBarScale>
+          </div>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
       </div>
     </main>
   );

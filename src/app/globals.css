@@ -3,31 +3,61 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --forground-color: #353535;
+  --background-color: #eeece6;
+  --button-background-color: #575757;
+  --button-border-color: #3b3b3b;
+  --button-forground-color: #ffffff
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --forground-color: #fff;
+    --background-color: #272727;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--forground-color);
+  background: var(--background-color);
+  font-family: monospace;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.button {
+  border: var(--button-border-color) solid;
+  background-color: var(--button-background-color);
+  color: var(--button-forground-color);
+}
+
+#bar-scale-background {
+  background-color: var(--button-border-color);
+  border: var(--button-border-color) solid;
+}
+
+#bar-scale-fill {
+  background-color: var(--button-background-color);
 }
