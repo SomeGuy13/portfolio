@@ -19,7 +19,7 @@ export default function Page() {
         </Link>
         <h1 className="mt-3">Skills</h1>
         <p>Just my personal guesses</p>
-        <div className="lg:flex lg:justify-between">
+        <div className="lg:flex lg:justify-between mb-16">
           <div>
             <h2>Game Development</h2>
             <h4>Design</h4>
