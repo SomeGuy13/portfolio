@@ -1,4 +1,4 @@
-import { VerticalBarScale } from "@/components/verticalBarScale";
+import { BarScale } from "@/components/barScale";
 import Link from "next/link";
 
 export default function Page() {
@@ -23,37 +23,37 @@ export default function Page() {
           <div>
             <h2>Game Development</h2>
             <h4>Design</h4>
-            <VerticalBarScale skillName="Mechanics" value={4.5}></VerticalBarScale>
-            <VerticalBarScale skillName="Level Design" value={3.7}></VerticalBarScale>
-            <VerticalBarScale skillName="UI Design" value={2}></VerticalBarScale>
+            <BarScale skillName="Mechanics" value={4.5}></BarScale>
+            <BarScale skillName="Level Design" value={3.7}></BarScale>
+            <BarScale skillName="UI Design" value={2}></BarScale>
             <h4>Art</h4>
-            <VerticalBarScale skillName="3D Modeling" value={4}></VerticalBarScale>
-            <VerticalBarScale skillName="3D Animation" value={0.75}></VerticalBarScale>
-            <VerticalBarScale skillName="Pixel Art" value={3}></VerticalBarScale>
-            <VerticalBarScale skillName="Voxel Art" value={9}></VerticalBarScale>
+            <BarScale skillName="3D Modeling" value={4}></BarScale>
+            <BarScale skillName="3D Animation" value={0.75}></BarScale>
+            <BarScale skillName="Pixel Art" value={3}></BarScale>
+            <BarScale skillName="Voxel Art" value={9}></BarScale>
             <h4>Programming</h4>
-            <VerticalBarScale skillName="C#" value={6.89}></VerticalBarScale>
-            <VerticalBarScale skillName="C" value={0.1}></VerticalBarScale>
-            <VerticalBarScale skillName="Rust" value={4.84}></VerticalBarScale>
-            <VerticalBarScale skillName="Blueprint" value={1.13}></VerticalBarScale>
-            <VerticalBarScale skillName="Lua" value={0.74}></VerticalBarScale>
+            <BarScale skillName="C#" value={6.89}></BarScale>
+            <BarScale skillName="C" value={0.1}></BarScale>
+            <BarScale skillName="Rust" value={4.84}></BarScale>
+            <BarScale skillName="Blueprint" value={1.13}></BarScale>
+            <BarScale skillName="Lua" value={0.74}></BarScale>
             <h4>Engines</h4>
-            <VerticalBarScale skillName="Unity" value={8.25}></VerticalBarScale>
-            <VerticalBarScale skillName="Unreal" value={1}></VerticalBarScale>
+            <BarScale skillName="Unity" value={8.25}></BarScale>
+            <BarScale skillName="Unreal" value={1}></BarScale>
             <h4></h4>
           </div>
           <div>
             <h2>Web Development</h2>
             <h4>Frameworks</h4>
-            <VerticalBarScale skillName="React" value={6.5}></VerticalBarScale>
-            <VerticalBarScale skillName="NextJS" value={4.2}></VerticalBarScale>
-            <VerticalBarScale skillName="Tailwind" value={5}></VerticalBarScale>
+            <BarScale skillName="React" value={6.5}></BarScale>
+            <BarScale skillName="NextJS" value={4.2}></BarScale>
+            <BarScale skillName="Tailwind" value={5}></BarScale>
             <h4>Database</h4>
-            <VerticalBarScale skillName="PostgrSQL" value={3}></VerticalBarScale>
+            <BarScale skillName="PostgrSQL" value={3}></BarScale>
             <h4>Languages</h4>
-            <VerticalBarScale skillName="HTML" value={9}></VerticalBarScale>
-            <VerticalBarScale skillName="CSS" value={6.32}></VerticalBarScale>
-            <VerticalBarScale skillName="Java Script" value={8}></VerticalBarScale>
+            <BarScale skillName="HTML" value={9}></BarScale>
+            <BarScale skillName="CSS" value={6.32}></BarScale>
+            <BarScale skillName="Java Script" value={8}></BarScale>
           </div>
         </div>
       </div>

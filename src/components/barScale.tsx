@@ -1,4 +1,4 @@
-export function VerticalBarScale({ skillName, value }: {skillName: string, value: number}) {
+export function BarScale({ skillName, value }: {skillName: string, value: number}) {
   let fill = value * 10;
 
   return(
