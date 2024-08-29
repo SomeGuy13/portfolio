@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <main>
       <div className='lg:w-3/6 md:w-5/6 p-2 m-auto'>
-        <h1 className="flex justify-center text-6xl md:mt-36 mt-8 mb-3 text-pretty text-center">Mechanized Viking</h1>
+        <h1 className="flex justify-center text-6xl md:mt-36 mt-8 mb-3 text-pretty text-center">Isaac Erickson</h1>
         <p className='flex justify-center text-pretty text-center mb-5 md:mb-24'>Game and web developer. Passionate about programming.</p>
         <h1>About</h1>
         <p>
@@ -33,9 +33,9 @@ export default function Page() {
             <BarScale skillName="Voxel Art" value={9}></BarScale>
             <h4>Programming</h4>
             <BarScale skillName="C#" value={6.89}></BarScale>
-            <BarScale skillName="C" value={0.1}></BarScale>
+            <BarScale skillName="C++" value={0.1}></BarScale>
             <BarScale skillName="Rust" value={4.84}></BarScale>
-            <BarScale skillName="Blueprint" value={1.13}></BarScale>
+            <BarScale skillName="Blueprint" value={0.98}></BarScale>
             <BarScale skillName="Lua" value={0.74}></BarScale>
             <h4>Engines</h4>
             <BarScale skillName="Unity" value={8.25}></BarScale>
