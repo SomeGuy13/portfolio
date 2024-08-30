@@ -8,7 +8,7 @@ export default function Home() {
         <div className='lg:flex'>
           <h1 className='text-nowrap md:text-7xl mr-6 pt-5'>Project Gallery</h1>
         </div>
-        <ProjectLayer right={true} projectTitle={'Project 000'} projectDescription={'Calculator Made with React'}></ProjectLayer>
+        <ProjectLayer right={true} projectTitle={'Project 000'} projectDescription={'Calculator Made with React'} pathName={'jscalc'}></ProjectLayer>
         <ProjectLayer projectTitle={'Project 001'} projectDescription={'Simple bubble popping game'}></ProjectLayer>
       </div>
   );
