@@ -5,8 +5,8 @@ export default function Page() {
       <h3>September 1, 2024</h3>
       <br />
       <p>
-        This is my first major project that I've managed to finish. This is my personal website were
-        I'm planning to show off all the stuff I'm doing and hopefully that gets me more motivated to finish projects...
+        This is my first major project that I&apos;ve managed to finish. This is my personal website were
+        I&apos;m planning to show off all the stuff I&apos;m doing and hopefully that gets me more motivated to finish projects...
       </p>
       <br />
       <p>

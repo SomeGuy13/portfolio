@@ -8,7 +8,7 @@ export default function Page() {
       <p className='flex justify-center text-pretty text-center mb-5 md:mb-24'>Game and web developer. Passionate about programming.</p>
       <h1>About</h1>
       <p>
-        I'm a self taught hobbiest who learns cool stuff from doing a lot of Googling, reading, and just straight up trail and error.
+        I&apos;m a self taught hobbiest who learns cool stuff from doing a lot of Googling, reading, and just straight up trail and error.
         Check out my projects below!
       </p>
       <Link href={"/projects"}>
@@ -18,7 +18,7 @@ export default function Page() {
       </Link>
       <br />
       <h1>Blog</h1>
-      <p>See what I've been working on recently!</p>
+      <p>See what I&apos;ve been working on recently!</p>
       <Link href={'/blog'}>
         <div className='button w-fit p-1.5 mt-3'>
           <p>See Blog</p>
