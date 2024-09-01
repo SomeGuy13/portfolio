@@ -4,13 +4,19 @@ import ProjectLayer from '@/components/projectLayer';
 
 export default function Home() {
   return (
-      <div className='lg:w-3/6 md:w-5/6 p-2 m-auto'>
-        <div className='lg:flex'>
-          <h1 className='text-nowrap md:text-7xl mr-6 pt-5'>Project Gallery</h1>
-        </div>
-        <ProjectLayer right={true} projectTitle={'Project 000'} projectDescription={'Calculator Made with React'} pathName={'jscalc'}></ProjectLayer>
-        <ProjectLayer projectTitle={'Project 001'} projectDescription={'Simple bubble popping game'}></ProjectLayer>
+    <div>
+      <div className='lg:flex'>
+        <h1 className='text-nowrap md:text-7xl mr-6 pt-5'>Project Gallery</h1>
       </div>
+      <ProjectLayer projectTitle={'Project 000'} 
+        projectDescription={'Simple bubble popping game'} 
+        pathName={'bubblepopper'} 
+        images={[
+          '/images/bubblepopper/2.png',
+          '/images/bubblepopper/0.png',
+          '/images/bubblepopper/1.png',
+        ]}></ProjectLayer>
+    </div>
   );
 }
 

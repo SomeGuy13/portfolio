@@ -32,7 +32,7 @@ export default function ProjectLayer(
       <div className='pt-10 m-0.5'>
         <h2 className='md:text-6xl'>{projectTitle}</h2>
         <p className='md:text-2xl pt-3'>{projectDescription}</p>
-        <Link href={`${pathName}`}>
+        <Link href={`/projects/${pathName}`}>
           <div className='button w-fit p-2 m-5 ml-0 text-xl'>See Project</div>
         </Link>
       </div>
