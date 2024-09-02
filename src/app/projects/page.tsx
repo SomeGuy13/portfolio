@@ -15,7 +15,9 @@ export default function Home() {
           '/images/bubblepopper/2.png',
           '/images/bubblepopper/0.png',
           '/images/bubblepopper/1.png',
-        ]}></ProjectLayer>
+        ]}
+        right={false}
+        ></ProjectLayer>
     </div>
   );
 }

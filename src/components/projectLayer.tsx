@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 export default function ProjectLayer(
   {images, projectTitle, projectDescription, right, pathName}:
-  {images: Array<string>, projectTitle: string, projectDescription: string, right: bool, pathName: string}
+  {images: string[], projectTitle: string, projectDescription: string, right: boolean, pathName: string}
 ){
 
-  let currentImages: Array<string> = ['/images/img1.jpg', '/images/img2.jpg', '/images/img3.jpg'];
+  let currentImages: string[] = ['/images/img1.jpg', '/images/img2.jpg', '/images/img3.jpg'];
   
   if (images != null) {
     currentImages = images;
