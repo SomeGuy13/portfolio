@@ -10,12 +10,6 @@ export default function Page() {
       </p>
       <br />
       <p>
-        This website is self hosted at home on a RasberryPi using NGINX for the server and JextJS
-        as a React framework. This project has been so much fun to work on, and I will continue to add
-        stuff over the years as my programming skills continue to grow and expand!
-      </p>
-      <br />
-      <p>
         Special thanks to all those who have supported and helped me with this project. I really
         appreciate you guys. &#60;3
       </p>
