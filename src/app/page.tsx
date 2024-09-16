@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Page() {
   return (
   <main>
-      <h1 className="flex justify-center text-6xl md:mt-36 mt-8 mb-3 text-pretty text-center">Isaac Erickson</h1>
+      <h1 className="flex justify-center text-6xl md:mt-20 mt-8 mb-3 text-pretty text-center">Isaac Erickson</h1>
       <p className='flex justify-center text-pretty text-center mb-5 md:mb-24'>Game and web developer. Passionate about programming.</p>
       <h1>About</h1>
       <p>
