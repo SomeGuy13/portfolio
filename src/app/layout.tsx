@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className='lg:w-3/6 md:w-5/6 p-2 m-auto'>
+        <div className='lg:w-7/12 md:w-5/6 p-2 m-auto'>
           <div className='flex justify-end w-full'>
             <Link href='/'><p className='p-4 sm:m-5'>About</p></Link>
             <Link href='/blog'><p className='p-4 sm:m-5'>Blog</p></Link>
