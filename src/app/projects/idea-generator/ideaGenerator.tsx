@@ -55,7 +55,7 @@ export default async function generateIdea() {
   }
 }
 
-function Rnbt(max: int, min: int) {
+function Rnbt(max: number, min: number) {
   return Math.floor(Math.random() * ((max - min) + min));
 }
 
