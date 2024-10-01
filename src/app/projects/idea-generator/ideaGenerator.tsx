@@ -8,7 +8,7 @@ export default async function generateIdea() {
     const ideaFile = await fs.readFile(process.cwd() + '/src/app/projects/idea-generator/ideas.json', 'utf8');
     const ideaData = JSON.parse(ideaFile);
 
-    let randomNum: int = Rnbt(4, 1);
+    let randomNum: int = Rnbt(3, 1);
 
     switch (randomNum) {
       case 0:
@@ -27,18 +27,18 @@ export default async function generateIdea() {
                ${ideaData.beings[Rnbt(ideaData.beings.length, 1)]}
                who will
                ${ideaData.tasks[Rnbt(ideaData.tasks.length, 1)]}.`
+      //case 2: 
+      //  return `A game about a 
+      //         ${ideaData.objects[Rnbt(ideaData.objects.length, 1)]} 
+      //         and a 
+      //         ${ideaData.objects[Rnbt(ideaData.objects.length, 1)]}.`
       case 2: 
-        return `A game about a 
-               ${ideaData.objects[Rnbt(ideaData.objects.length, 1)]} 
-               and a 
-               ${ideaData.objects[Rnbt(ideaData.objects.length, 1)]}.`
-      case 3: 
         return `You are a 
                ${ideaData.beings[Rnbt(ideaData.beings.length, 1)]} 
                who is ${ideaData.traits[Rnbt(ideaData.traits.length, 1)]}
                that tries to 
                ${ideaData.tasks[Rnbt(ideaData.tasks.length, 1)]}.`
-      case 4: 
+      case 3: 
         return `A game where you must 
                ${ideaData.tasks[Rnbt(ideaData.tasks.length, 1)]} 
                with ${ideaData.objects[Rnbt(ideaData.objects.length, 1)]}
