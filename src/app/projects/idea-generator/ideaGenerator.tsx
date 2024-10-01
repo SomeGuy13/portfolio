@@ -30,7 +30,7 @@ export default async function generateIdea() {
       case 2: 
         return `A game about a 
                ${ideaData.objects[Rnbt(ideaData.objects.length, 1)]} 
-               and 
+               and a 
                ${ideaData.objects[Rnbt(ideaData.objects.length, 1)]}.`
       case 3: 
         return `You are a 
