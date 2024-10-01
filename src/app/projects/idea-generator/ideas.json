@@ -1,4 +1,8 @@
 {
-  "people": ["snowman", "custodian", "skeleton", "fox", "chicken", "rabbit"],
-  "tasks": ["clean their room", "defend a castle", "do homework"]
+  "beings": ["snowman", "custodian", "skeleton", "fox", "chicken", "rabbit"],
+  "tasks": ["clean their room", "defend a castle", "do homework"],
+  "verbs": ["stinky", "spooky", "cute"],
+  "genres": ["strategy", "survival", "adventure", "RPG"],
+  "objects": ["umbrella", "cup o' noodles", "chair"],
+  "traits": ["fear of heights", "overly confident", "allways hungry", "very happy"]
 }
