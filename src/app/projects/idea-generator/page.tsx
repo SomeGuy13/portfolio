@@ -4,7 +4,7 @@ import React from 'react';
 import { useState } from 'react';
 import generateIdea from './ideaGenerator.tsx';
 
-export default function Page({ idea: string }) {
+export default function Page({ idea }: { idea: string }) {
   const [generatedIdea, setGeneratedIdea] = useState(idea);
 
   const handleClick = async () => {
