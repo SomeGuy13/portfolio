@@ -11,6 +11,11 @@ export default function Home() {
       <ProjectLayer projectTitle={'Project 001'}
         projectDescription={'Random game idea generator'}
         pathName={'idea-generator'}
+        images={[
+          '/images/img1.jpg',
+          '/images/img2.jpg',
+          '/images/img3.jpg',
+        ]}
         right={true}
         ></ProjectLayer>
       <ProjectLayer projectTitle={'Project 000'} 
