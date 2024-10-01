@@ -8,7 +8,7 @@ export default async function generateIdea() {
     const ideaFile = await fs.readFile(process.cwd() + '/src/app/projects/idea-generator/ideas.json', 'utf8');
     const ideaData = JSON.parse(ideaFile);
 
-    let randomNum: int = Rnbt(3, 1);
+    let randomNum: number = Rnbt(3, 1);
 
     switch (randomNum) {
       case 0:
