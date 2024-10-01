@@ -6,6 +6,7 @@ export default function Page() {
     <div>
       <h1>Project 000</h1>
       <h3 className='mb-2'>Simple Bubble Popper</h3>
+      <br/>
       <p>
         This was a little hello world of sorts for me to figure out how getting an app on the app stores worked.
         I whipped up a quick and simple game in Unity where the player would need to tap on small little
