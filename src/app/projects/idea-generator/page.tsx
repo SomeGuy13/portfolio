@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useState } from 'react';
-import generateIdea from './ideaGenerator.tsx';
+import generateIdea from './ideaGenerator';
 
 export default function Page() {
   let idea: string = '';
