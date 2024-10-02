@@ -1,11 +1,12 @@
 'use server';
 
 import { promises as fs } from 'fs';
+import path from 'path';
 
 export default async function generateIdea() {
-
   try {
-    const ideaFile = await fs.readFile('public/ideas.json', 'utf8');
+    const filePath = path.join(process.cwd(), 'public', 'ideas.json')
+    const ideaFile = await fs.readFile(filePath, 'utf8');
     const ideaData = JSON.parse(ideaFile);
 
     let randomNum: number = Rnbt(3, 1);
