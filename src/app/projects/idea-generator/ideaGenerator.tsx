@@ -5,7 +5,7 @@ import path from 'path';
 
 export default async function generateIdea() {
   try {
-    const ideaFile = await fs.readFile('/data/ideas.json', 'utf8');
+    const ideaFile = await fs.readFile(process.cwd() + '/public/data/ideas.json', 'utf8');
     const ideaData = JSON.parse(ideaFile);
 
     let randomNum: number = Rnbt(3, 1);
