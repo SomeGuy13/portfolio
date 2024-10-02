@@ -16,7 +16,7 @@ export default async function generateIdea() {
     //  fetchData();
     // }, []);
 
-    const filePath = path.join(process.cwd(), './public/data', 'ideas.json');
+    const filePath = path.join(process.cwd(), 'ideas.json');
     const ideaFile = await fs.readFile(filePath, 'utf8');
     const ideaData = JSON.parse(ideaFile);
 
