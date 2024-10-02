@@ -5,7 +5,7 @@ import path from 'path';
 
 export default async function generateIdea() {
   try {
-    const filePath = path.join(process.cwd(), 'public/data', 'ideas.json');
+    const filePath = path.join(process.cwd(), 'app/public/data', 'ideas.json');
     const ideaFile = await fs.readFile(filePath, 'utf8');
     const ideaData = JSON.parse(ideaFile);
 
