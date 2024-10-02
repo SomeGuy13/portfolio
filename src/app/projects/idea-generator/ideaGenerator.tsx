@@ -2,10 +2,21 @@
 
 import { promises as fs } from 'fs';
 import path from 'path';
+// import { useEffect, useState} from 'react';
 
 export default async function generateIdea() {
   try {
-    const filePath = path.join(process.cwd(), 'app/public/data', 'ideas.json');
+    // const [data, setData] = useState(null);
+
+    // useEffect(() => {
+    //  const fetchData = async () => {
+    //    const res = await import('../public/data/ideas.json');
+    //    setData(res.default);
+    //  };
+    //  fetchData();
+    // }, []);
+
+    const filePath = path.join(process.cwd(), './public/data', 'ideas.json');
     const ideaFile = await fs.readFile(filePath, 'utf8');
     const ideaData = JSON.parse(ideaFile);
 
