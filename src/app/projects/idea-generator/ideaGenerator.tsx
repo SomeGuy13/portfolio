@@ -432,7 +432,8 @@ let ideaData = {
     "mellow",
     "bold"
   ],
-  "genres": ["strategy",
+  "genres": [
+    "strategy",
     "survival", 
     "adventure", 
     "RPG", 
@@ -487,7 +488,12 @@ let ideaData = {
     "social deduction",
     "strategy RPG",
     "card battle",
-    "resource management"
+    "resource management",
+    "bullet hell",
+    "run and gun",
+    "walking simulator",
+    "real time strategy",
+    "deck builder",
   ],
   "objects": [
     "umbrella",
