@@ -8,6 +8,16 @@ export default function Home() {
       <div className='lg:flex'>
         <h1 className='text-nowrap md:text-7xl mr-6 pt-5'>Project Gallery</h1>
       </div>
+      <ProjectLayer projectTitle={'Project 002'}
+        projectDescription={'Little sci fi writing project.'}
+        pathName={'conquer-until-conquered'}
+        images={[
+          '/images/img1.jpg',
+          '/images/img2.jpg',
+          '/images/img3.jpg',
+        ]}
+        right={false}
+        ></ProjectLayer>
       <ProjectLayer projectTitle={'Project 001'}
         projectDescription={'Random game idea generator'}
         pathName={'idea-generator'}
