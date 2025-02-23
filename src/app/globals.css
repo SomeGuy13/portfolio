@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --forground-color: #353535;
+  --forground-color: black;
   --background-color: #eeece6;
   --button-background-color: #575757;
   --button-border-color: #3b3b3b;
@@ -20,11 +20,11 @@
 body {
   color: var(--forground-color);
   background: var(--background-color);
-  font-family: monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  color: black;
+  border-bottom: solid black 3px;
 }
 
 h1 {
@@ -44,7 +44,16 @@ h4 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
+  color: black;
+  margin-top: 2px;
+  margin-bottom: 9px;
+}
+
+hr {
+  border: solid 3px black;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .button, .blog-item {
@@ -68,4 +77,12 @@ p {
   height: fit-content;
   width: 100%;
   margin-top: 20;
+}
+
+.folder-container {
+  background-color: #edb865;
+  width: 128px;
+  height: 86px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
