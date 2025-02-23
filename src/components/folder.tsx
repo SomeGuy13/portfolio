@@ -1,11 +1,7 @@
 import Link from 'next/link';
 
-type Props = {
-  name: string;
-  rout: string;
-};
 
-export default function Folder({ name, rout }: {Props}) {
+export default function Folder({ name, rout }: { name: string; rout: string; }) {
   return (
     <Link href={rout}>
       <div className='folder-container flex items-center m-5'>

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Portfolio of things made by me",
 };
 
-const courierPrime = Courier_Prime({ subsets: ['latin'], weight: '400'});
+const courierPrime = Courier_Prime({ subsets: ["latin"], weight: "400"});
 
 export default function RootLayout({
   children,
